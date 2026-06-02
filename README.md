@@ -8,7 +8,8 @@ A modern desktop-based Task Management System developed using **Python**, **Tkin
 
 <br>
 
-<img src="screenshots/dashboard.png" width="95%" alt="TaskFlow Dashboard">
+<img src="<img width="1364" height="719" alt="image" src="https://github.com/user-attachments/assets/ee5105fe-c7a6-4f45-a52d-f42f1e0451bf" />
+" width="95%" alt="TaskFlow Dashboard">
 
 <br>
 
