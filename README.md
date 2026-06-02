@@ -8,9 +8,6 @@ A modern desktop-based Task Management System developed using **Python**, **Tkin
 
 <br>
 
-<img src="<img width="1364" height="719" alt="image" src="https://github.com/user-attachments/assets/ee5105fe-c7a6-4f45-a52d-f42f1e0451bf" />
-" width="95%" alt="TaskFlow Dashboard">
-
 <br>
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
@@ -137,7 +134,8 @@ The login window allows registered users to securely access their personal works
 ## 📊 Dashboard
 
 <p align="center">
-<img src="screenshots/dashboard.png" width="950">
+<img width="1364" height="719" alt="image" src="https://github.com/user-attachments/assets/ce160654-67ac-4267-b861-f0269c1b59d2" />
+
 </p>
 
 The dashboard provides a complete overview of tasks, statistics, filters, and task management operations in a single interface.
