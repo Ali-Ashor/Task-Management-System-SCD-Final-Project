@@ -8,8 +8,6 @@ A modern desktop-based Task Management System developed using **Python**, **Tkin
 
 <br>
 
-<br>
-
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
 ![Tkinter](https://img.shields.io/badge/Tkinter-GUI-6A5ACD?style=for-the-badge)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge\&logo=sqlite\&logoColor=white)
@@ -124,7 +122,8 @@ TaskFlow addresses these challenges by providing a lightweight desktop applicati
 ## 🔐 Login Window
 
 <p align="center">
-<img src="screenshots/login.png" width="500">
+<img width="411" height="550" alt="image" align="center" src="https://github.com/user-attachments/assets/af385fa5-b896-40f9-bd0a-3b83e9471f7f" />
+
 </p>
 
 The login window allows registered users to securely access their personal workspace. New users can register through the integrated account creation system.
