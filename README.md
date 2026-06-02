@@ -1,173 +1,187 @@
-# ✔ TaskFlow — Task Management System
+<div align="center">
 
-> A full-featured Task Management System built with Python, Tkinter GUI, SQLite database, and OOP principles.
+# 🚀 TaskFlow
 
----
+### Smart Task Management System
 
-## 👥 Group Members
+A modern desktop productivity application built with **Python**, **Tkinter**, **SQLite3**, and **MVC Architecture**.
 
-| Name | Role |
-|------|------|
-| Member 1 | Models & Database Layer |
-| Member 2 | Controllers & Business Logic |
-| Member 3 | GUI / Views & Unit Tests |
+<br>
 
----
+<img src="screenshots/dashboard.png" width="95%" alt="TaskFlow Dashboard"/>
 
-## 📌 Project Overview
+<br>
 
-TaskFlow is a desktop Task Management System that helps users create, manage, and track tasks with priorities, categories, due dates, and status updates. Built following MVC (Model-View-Controller) architecture.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-GUI-6A5ACD?style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![MVC](https://img.shields.io/badge/Architecture-MVC-FF6B6B?style=for-the-badge)
+![PyTest](https://img.shields.io/badge/PyTest-32_Tests_Passed-success?style=for-the-badge&logo=pytest)
 
----
-
-## 🛠️ Technologies Used
-
-| Tool / Technology | Purpose |
-|---|---|
-| Python 3.x | Primary programming language |
-| Tkinter | GUI framework |
-| SQLite3 | Local database |
-| PyTest | Unit testing |
-| Git & GitHub | Version control |
-| VS Code | IDE |
+</div>
 
 ---
 
-## 📁 Project Structure
+## ✨ Overview
 
-```
-task_manager/
-│
-├── app.py                      # Main entry point (GUI)
-│
-├── models/
-│   ├── __init__.py
-│   ├── database.py             # DatabaseManager base class + SQLite setup
-│   └── models.py               # Task, User, Category models (OOP)
-│
-├── controllers/
-│   ├── __init__.py
-│   └── task_controller.py      # Business logic (AuthController, TaskController)
-│
-├── tests/
-│   ├── __init__.py
-│   └── test_task_manager.py    # 25+ PyTest unit tests
-│
-├── requirements.txt
-└── README.md
-```
+TaskFlow is a desktop-based task management system designed to help users efficiently organize, prioritize, and track their daily work.
+
+The application follows the **Model-View-Controller (MVC)** architecture and provides a clean dark-themed interface for managing tasks, categories, deadlines, and productivity statistics.
 
 ---
 
-## ⚙️ OOP Concepts Applied
+## 🎯 Key Features
 
-| Concept | Where Used |
-|---|---|
-| **Classes & Objects** | `Task`, `User`, `Category`, `DatabaseManager` |
-| **Inheritance** | `TaskManagerDB` inherits `DatabaseManager`; `Task`, `User`, `Category` inherit `BaseModel` |
-| **Polymorphism** | `to_dict()` overridden in each model subclass |
-| **Encapsulation** | `User._password` with property getter/setter |
-| **MVC Pattern** | Models / Controllers / Views separated |
+<table>
+<tr>
 
----
+<td width="50%">
 
-## 🚀 How to Run
+### 📋 Task Management
+- Create Tasks
+- Edit Tasks
+- Delete Tasks
+- Search Tasks
 
-### 1. Install Dependencies
-```bash
-pip install pytest
-```
+### 🏷 Categories
+- Custom Categories
+- Color Labels
+- Easy Organization
 
-### 2. Run the Application
-```bash
-cd task_manager
-python app.py
-```
+### 📅 Due Dates
+- Deadline Tracking
+- Overdue Detection
 
-### 3. Default Login
-```
-Username: admin
-Password: admin123
-```
+</td>
 
-### 4. Run Unit Tests
-```bash
-cd task_manager
-pytest tests/ -v
-```
+<td width="50%">
 
----
+### 🔐 Authentication
+- User Registration
+- Secure Login
+- Personal Workspace
 
-## ✅ Features
+### 📊 Dashboard Analytics
+- Task Statistics
+- Status Overview
+- Real-Time Counts
 
-- 🔐 **User Authentication** — Login / Register system
-- ➕ **Task CRUD** — Create, Read, Update, Delete tasks
-- 🏷️ **Categories** — Organize tasks by custom categories
-- 🎯 **Priority Levels** — Low, Medium, High, Critical
-- 📊 **Status Tracking** — Pending, In Progress, Completed, Cancelled
-- 🔍 **Search & Filter** — Search by title, filter by status/priority
-- 📈 **Dashboard Stats** — Live task count by status
-- 🌑 **Dark Theme UI** — Professional dark mode interface
+### 🎯 Priorities
+- Low
+- Medium
+- High
+- Critical
+
+</td>
+
+</tr>
+</table>
 
 ---
 
-## 🧪 Testing
+# 📸 Application Screenshots
 
-- **Framework**: PyTest
-- **Test File**: `tests/test_task_manager.py`
-- **Tests Count**: 25+ unit tests
-- **Coverage**:
-  - Authentication (login/register validation)
-  - Task CRUD operations
-  - Input validation & error handling
-  - Model methods (`to_dict`, `is_overdue`, `repr`)
-  - Edge cases (empty fields, invalid values)
+## 🔐 Login Window
+
+<p align="center">
+<img src="screenshots/login.png" width="500">
+</p>
+
+## 📊 Dashboard
+
+<p align="center">
+<img src="screenshots/dashboard.png" width="950">
+</p>
 
 ---
 
-## 🗃️ Database Schema
+## 🏗 System Architecture
 
-```sql
-users (id, username, password, email, created_at)
-categories (id, name, color, user_id)
-tasks (id, title, description, priority, status, due_date, category_id, user_id, created_at, updated_at)
+```text
+┌────────────────────┐
+│      View          │
+│   Tkinter GUI      │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│    Controller      │
+│  Business Logic    │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│      Model         │
+│   SQLite Layer     │
+└────────────────────┘
 ```
 
 ---
 
-## 📝 Git Commit Guidelines
+## 🛠 Technology Stack
 
-```
-feat: add task creation form
-fix: resolve login validation bug
-test: add unit tests for TaskController
-refactor: extract business logic to controller
-docs: update README with setup instructions
-```
-
----
-
-## 🔧 Debugging & Error Handling
-
-- All user inputs validated in `TaskController.validate_task()`
-- Custom `ValueError` exceptions with descriptive messages
-- `try/except` blocks in all DB operations
-- SQLite foreign key constraints enforced
+| Technology | Purpose |
+|------------|---------|
+| Python 3.x | Core Programming |
+| Tkinter | GUI Development |
+| SQLite3 | Database |
+| PyTest | Unit Testing |
+| Git & GitHub | Version Control |
+| VS Code | Development Environment |
 
 ---
 
-## 📦 Deployment
+## 📊 Project Statistics
 
-- **Local**: Run `python app.py`
-- **GitHub**: Push to repository with commit history
-- **GitHub Pages**: N/A (Desktop app — distribute as `.py` or package with PyInstaller)
+| Metric | Value |
+|---------|---------|
+| MVC Layers | 3 |
+| Database Tables | 3 |
+| OOP Concepts | 5 |
+| Unit Tests | 32 |
+| Team Members | 3 |
+| Status | Completed ✅ |
 
 ---
 
-## 👤 Individual Contributions
+## 👨‍💻 Team Contributions
 
-Each group member should add their personal contribution section in their **Individual Report**.
+| Member | Responsibility |
+|----------|-------------|
+| **Shujaat Ali** | Models & Database Layer |
+| **Muhammad Abbas** | Controllers & Business Logic |
+| **Muhammad Bilal** | GUI Development & Testing |
 
 ---
 
-*Final Lab Project — Software Construction and Development Lab*
+## ⭐ Project Highlights
+
+✅ MVC Architecture
+
+✅ Object-Oriented Programming
+
+✅ Secure Authentication
+
+✅ Dark Theme Interface
+
+✅ SQLite Database
+
+✅ Dashboard Analytics
+
+✅ Search & Filtering
+
+✅ 32 Passing Unit Tests
+
+---
+
+<div align="center">
+
+### Built for Software Construction & Development Lab
+
+**Federal Urdu University of Arts, Science & Technology (FUUAST)**
+
+BS Software Engineering • Semester 5 • Spring 2026
+
+⭐ Star the repository if you like the project!
+
+</div>
