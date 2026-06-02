@@ -6,7 +6,6 @@
 
 A modern desktop-based Task Management System developed using **Python**, **Tkinter**, **SQLite3**, and the **MVC (Model-View-Controller)** architecture.
 
-<br>
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
 ![Tkinter](https://img.shields.io/badge/Tkinter-GUI-6A5ACD?style=for-the-badge)
